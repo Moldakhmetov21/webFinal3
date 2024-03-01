@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Ensuring a consistent font family */
+    background: #f8f9fa url('https://wallpapers.com/images/featured/stock-market-pd5zksxr07t7a4xu.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Full cover background */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.85); /* Adjusting the transparency for readability */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    color: #333; /* Color adjusted for readability */
+    text-align: center;
+}
+
+header h1 {
+    color: #007bff; /* Blue color consistent with the trading theme */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.25); /* Adding a subtle border */
+    border-radius: 5px; /* Less rounded borders for a more modern look */
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select {
+    background: rgba(255, 255, 255, 0.95); /* White background for input fields */
+    color: #333; /* Dark text for readability */
+    padding-left: 15px; /* Adjusted padding for text alignment */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+button {
+    background-color: #28a745; /* Green color for actions */
+    color: #fff; /* White text for contrast */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for interaction */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Consistent shadow styling */
+}
+
+button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Interactive feedback on click */
+}

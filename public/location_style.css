@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body with a professional trading website background */
+body {
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa url('https://wallpapers.com/images/featured/stock-market-pd5zksxr07t7a4xu.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+/* Header styles aligned with the trading theme */
+header {
+    background-color: rgba(0, 0, 0, 0.85); /* Consistent semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px; /* Spacing between header and content */
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Map container with adjusted colors to fit the trading website style */
+#map {
+    height: 400px;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more transparent for content emphasis */
+}
+
+#map:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #map {
+        width: 90%;
+        height: 300px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}

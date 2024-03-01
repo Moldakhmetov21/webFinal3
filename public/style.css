@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Consistent font family for professional look */
+    background-image: url('https://wallpapers.com/images/featured/stock-market-pd5zksxr07t7a4xu.jpg');
+    background-size: cover; /* Ensure the background covers the whole page */
+    background-repeat: no-repeat; /* No repeat of the background */
+    background-position: center; /* Center the background image */
+}
+
+.main-container {
+    text-align: center;
+    color: #333; /* Color adjusted for readability */
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background for legibility */
+    padding: 2em; /* Padding for spacing */
+    border-radius: 0.5em; /* Rounded corners for modern feel */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 50px;
+    color: #007bff; /* Header color for consistency */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 1em;
+    text-decoration: none;
+    background: #28a745; /* Adjusted to a 'buy' action green for trading context */
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 16px;
+    transition: background-color 0.3s; /* Transition for hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+nav a:hover {
+    background: #1c7c29; /* Darker shade on hover for interaction */
+}

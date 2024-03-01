@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa url('https://wallpapers.com/images/featured/stock-market-pd5zksxr07t7a4xu.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Slightly more visibility */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333; /* Color adjusted for readability */
+    border-radius: 10px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #007bff; /* Consistent header color */
+}
+
+.container .input {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333; /* Input text color adjusted for readability */
+    padding: 10px 25px;
+}
+
+input::placeholder {
+    color: #000000; /* Placeholder color adjusted for readability */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #007bff; /* Consistent button color */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff; /* Button text color */
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for interaction */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker on hover for interaction feedback */
+}

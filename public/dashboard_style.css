@@ -1,0 +1,95 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Ensuring clarity and readability */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    color: #333;
+    background: #f8f9fa url('https://wallpapers.com/images/featured/stock-market-pd5zksxr07t7a4xu.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    color: #ffffff;
+    background-color: #007bff; /* Professional look */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Navigation bar adjustments */
+nav {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between items */
+    padding: 0.5em 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-size: 16px; /* Adjusted font size */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for interaction */
+}
+
+nav a:hover, nav a:focus {
+    background-color: #0056b3; /* Darker on hover for interaction feedback */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+nav a.active {
+    background-color: #004c8c; /* Differentiate the active link */
+    font-weight: bold;
+}
+
+.container {
+    background: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Enhanced styles for important buttons (e.g., admin login) */
+button {
+    background-color: #dc3545; /* Red for urgency or importance */
+    color: white;
+    padding: 15px 30px; /* Larger for prominence */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font for visibility */
+    font-weight: bold; /* Bold for importance */
+    margin: 5px 0; /* Additional spacing */
+    transition: background-color 0.3s ease; /* Smooth transition for interaction */
+}
+
+button:hover {
+    background-color: #c82333; /* Darker on hover for interaction feedback */
+}
+
+/* Adjustments for table styles to accommodate financial data display efficiently */
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f8f9fa;
+}
+
+tr:nth-child(even) td {
+    background-color: #e9ecef;
+}
